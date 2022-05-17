@@ -51,7 +51,7 @@
         transform: translateY(-3px); }
 
 .nav__mob__btn {
-  z-index: 1;
+  z-index: 10;
   position: absolute;
   top: 3rem;
   right: 3rem;
@@ -79,7 +79,8 @@
   justify-content: flex-start;
   gap: 1rem;
   transform: translateX(100%);
-  transition: all .3s; }
+  transition: all .3s; 
+z-index: 9;}
 
 .mob__nav__list.active {
   transform: translateX(0); }
@@ -118,6 +119,7 @@
   @media screen and (max-width: 815px) {
     .display {
       grid-template-columns: 1fr;
+      position: relative;
       justify-items: center; } }
   .display__content {
     display: flex;
@@ -262,12 +264,15 @@
 .questions__box {
   width: 100%;
   position: relative;
+  border-bottom: 1px solid #9194a1;
   overflow: hidden; }
   .questions__box__item {
-    background-color: #f7f5f5;
+    border-top: 1px solid #9194a1;
+    
     padding: 2rem;
     display: flex;
     justify-content: space-between; }
+    
   .questions__box__answer {
     padding: 2rem;
     position: relative;
@@ -422,3 +427,164 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: 1.8rem;
   overflow-x: hidden; }
+
+
+
+.shape{
+  position: absolute;
+  bottom: 10%;
+  right: 0%;
+  width: 40rem;
+  height: 30rem;
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+  background-color: #5368df;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1015px) {
+  .shape{
+    position: absolute;
+    bottom: 20%;
+    right: 0%;
+    width: 40rem;
+    height: 25rem;
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+    background-color: #5368df;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .shape{
+    position: absolute;
+    bottom: 30%;
+    right: 0%;
+    width: 35rem;
+    height: 20rem;
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+    background-color: #5368df;
+    z-index: -1;
+  }
+}
+@media screen and (max-width: 815px) {
+  .shape{
+    position: absolute;
+    bottom: 45%;
+    right: 0%;
+    width: 40rem;
+    height: 30rem;
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+    background-color: #5368df;
+    z-index: -1;
+  }
+
+  .display__content{
+    margin-top: 8rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .shape{
+    position: absolute;
+    bottom: 55%;
+    right: 0%;
+    width: 40rem;
+    height: 25rem;
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+    background-color: #5368df;
+    z-index: -1;
+  }
+
+  .display__content{
+    margin-top: 8rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .shape{
+    position: absolute;
+    bottom: 60%;
+    right: 0%;
+    width: 30rem;
+    height: 20rem;
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+    background-color: #5368df;
+    z-index: -1;
+  }
+
+  .display__content{
+    margin-top: 8rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .shape{
+    position: absolute;
+    bottom: 63%;
+    right: 0%;
+    width: 25rem;
+    height: 17rem;
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+    background-color: #5368df;
+    z-index: -1;
+  }
+
+  .display__content{
+    margin-top: 8rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .shape{
+    position: absolute;
+    bottom: 67%;
+    right: 0%;
+    width: 20rem;
+    height: 15rem;
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+    background-color: #5368df;
+    z-index: -1;
+  }
+
+  .display__content{
+    margin-top: 8rem;
+  }
+}
+  /* sssssssssssss */
+  /* .display__img-1{
+    position: relative;
+  } */
+  /* .display__img-1::after{
+    content: '';
+    display: block;
+    height: 4rem;
+    width: 8rem;
+    background-color: #5368df;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    z-index: 3;
+  } */
+
+  /* .display::after{
+    content: '';
+    display: block;
+    position: absolute;
+    height:25rem;
+    width: 45rem;
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+    top: 30rem;
+    right: 5rem;
+    
+    background-color: #5368df;
+    z-index: 2;
+  } */
