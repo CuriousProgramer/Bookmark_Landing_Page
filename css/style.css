@@ -224,7 +224,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    .cards__box img{
+    .cards__box .dots{
       width: 100%;
     }
     .cards__box-2 {
