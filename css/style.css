@@ -224,6 +224,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    .cards__box img{
+      width: 100%;
+    }
     .cards__box-2 {
       transform: translateY(3rem); }
     .cards__box-3 {
